@@ -7,6 +7,8 @@ void displayArray(int array[]);
 
 int findMaximumValue(int array[]);
 
+int saveArrayToFile(int array[]);
+
 int findMinimumValue(int array[]);
 
 int enterDataIntoArray(int array[]);
