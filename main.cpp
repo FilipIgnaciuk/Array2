@@ -8,6 +8,8 @@ void menu(void){
     printf("3. Determine rhe minimum value\n");
     printf("4. Determine rhe maximum value\n");
     printf("5. Determine rhe average value\n");
+    printf("6. Save to file\n");
+    printf("7. Restore from file\n");
     printf("0. Exit\n");
     printf("Select an option here:\n");
 }
@@ -52,6 +54,9 @@ int main() {
                 } else {
                     printf("Something went wrong...\n\n");
                 }
+                break;
+            case 7 :
+                displayFromFile(array);
                 break;
             default:
                 printf("Pick the right number\n");
