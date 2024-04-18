@@ -45,6 +45,14 @@ int main() {
             case 5 :
                 printf("Average value = %f\n", average);
                 break;
+            case 6:
+                printf("Saving data to the file\n\n");
+                if (!saveArrayToFile(array)){
+                    printf("Array saved to the file\n\n");
+                } else {
+                    printf("Something went wrong...\n\n");
+                }
+                break;
             default:
                 printf("Pick the right number\n");
         }
