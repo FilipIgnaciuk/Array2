@@ -59,3 +59,26 @@ int saveArrayToFile(int array[]){
     fclose(fptr);
     return 0;
 }
+
+void displayFromFile(int []){
+    FILE * fptr;
+    char fileLine[100];
+    fptr = fopen("array.txt", "r");
+    if (fptr != 0)
+    {
+        while (!feof(fptr))
+        {
+            fgets(fileLine, 100, fptr);
+            if (!feof(fptr))
+            {
+                puts(fileLine);
+            }
+        }
+    }
+    else
+    {
+        printf("\nError with file opening!\n");
+    }
+    fclose(fptr);
+
+}

@@ -15,4 +15,6 @@ int enterDataIntoArray(int array[]);
 
 float calculateAverege(int array[]);
 
+void displayFromFile(int array[]);
+
 #endif //ARRAY2_ARRAY_H
